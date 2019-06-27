@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doyouloveme2</title>
+</head>
+<body>
+<p id="text"> Do you love me ?</p>
+<button id="yes" onclick="display()">YES</button>
+<button id="no" onmouseover="hoover()"
+        style="position:fixed; left:285px; top:235px;">NO</button>
+</body>
+<script>
+    function display() {
+        alert("Yes, you are right!")
+    }
+
+    function hoover() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("no").style.left = x + "px";
+        document.getElementById("no").style.top = y + "px";
+
+    }
+</script>
+</html>
